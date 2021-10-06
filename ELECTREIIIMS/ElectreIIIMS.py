@@ -22,7 +22,7 @@ def ElectreIIIExplotarFlujoNeto():
     
     plt = platform.system()
     if   plt == "Windows":  TestLib = ctypes.cdll.LoadLibrary(r'D:\Software\Sistemas\Investigacion\ELECTREIIISL\bin\Debug\ELECTREIIISL.dll')        
-    else: TestLib = ctypes.cdll.LoadLibrary('/home/francisco/Software/Sistemas/Investigacion/ELECTREIIISL/bin/Debug/libELECTREIIISL.so')   
+    else: TestLib = ctypes.cdll.LoadLibrary('/home/francisco/Software/Sistemas/Investigacion/MADM-SL/ELECTREIIISL/bin/Debug/libELECTREIIISL.so')   
    
     if request.method == 'POST':
         na = int(convert(request.form.get("na")))
